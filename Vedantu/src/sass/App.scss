@@ -1,0 +1,131 @@
+.App {
+  ul,
+  li {
+    margin: 0px;
+    padding: 0px;
+  }
+  margin: auto 5%;
+  height: 95vh;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+  .loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .profile {
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .p-name {
+      font-size: 26px;
+      line-height: 30px;
+      display: block;
+    }
+    .p-nickname {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      color: #666;
+      display: block;
+    }
+  }
+  .search {
+    padding: 5px;
+    border-bottom: 1px solid #e1e4e8 !important;
+    input {
+      width: 50%;
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0 5px;
+    }
+    select {
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0 5px;
+      margin: 0 10px;
+    }
+  }
+  nav {
+    ul {
+      border-bottom: 1px solid #e1e4e8 !important;
+      li {
+        display: inline-block;
+        width: 115px;
+        height: 30px;
+        text-align: center;
+        padding: 10px;
+        &.active {
+          font-weight: bold;
+          border-bottom: 2px solid #e36209;
+        }
+        .Counter {
+          display: inline-block;
+          padding: 2px 5px;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 1;
+          color: #586069;
+          background-color: rgba(27, 31, 35, 0.08);
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .repo-container {
+    ul {
+      li {
+        display: block;
+        border-bottom: 1px solid #e1e4e8 !important;
+        padding: 10px 0px;
+        h3 {
+          color: #0366d6;
+          text-decoration: none;
+        }
+        .language-color {
+          background-color: #f1e05a;
+          display: inline-block;
+          padding: 6px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .row {
+    .col-left {
+      width: 25%;
+      float: left;
+    }
+    .col-right {
+      width: 74%;
+      float: right;
+    }
+  }
+  .elipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .row {
+      .col-left {
+        width: 100%;
+        float: left;
+      }
+      .col-right {
+        width: 100%;
+        float: right;
+      }
+    }
+  }
+}
